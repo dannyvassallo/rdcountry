@@ -26,6 +26,9 @@ function validateCode() {
     if (code == "believe"){
         $('.gate').fadeOut('slow');
         window.scrollTo(0,0);
+        var ageVal = $('#age').val();
+        $('body').css('position', 'relative');
+        $('#entry_1845520799').val(ageVal);
         $('.gate').fadeOut('slow');
         return false
     }

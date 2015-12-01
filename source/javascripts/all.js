@@ -6,4 +6,7 @@
 //= require_age-gate
 //= require_code-gate
 //= require_scroll
+//= require vendor/_mobiscroll
+//= require _gateheight
+//= require _osdetector
 //= require_tree .
