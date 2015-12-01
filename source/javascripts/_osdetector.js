@@ -1,10 +1,13 @@
 if(/(iPhone|iPad|iPod)\sOS\s7/.test(navigator.userAgent)) {
+    alert('ios7');
     initiOSfixer();
 }
 if(/(iPhone|iPad|iPod)\sOS\s8/.test(navigator.userAgent)) {
+    alert('ios8');
     initiOSfixer();
 }
 if(/(iPhone|iPad|iPod)\sOS\s9/.test(navigator.userAgent)) {
+    alert('ios9');
     initiOSfixer();
 }
 
