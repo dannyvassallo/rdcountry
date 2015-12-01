@@ -38,7 +38,9 @@ function adapt_to_orientation() {
   }
 
   var viewport_scale = screen_dimension / content_width;
-
+  setTimeout(function(){
+    resizeGate();
+  }, 500);
   // resize viewport
   $('meta[name=viewport]').attr('content',
     'width=' + content_width + ',' +

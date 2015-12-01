@@ -5,3 +5,16 @@ function fixHeightOnIOS7() {
     );
     $('body').height(fixedHeight);
 }
+
+function resizeGate(){
+  var winH = window.innerHeight;
+  $('.gate').height(winH);
+}
+
+$(function(){
+  resizeGate();
+});
+
+$(window).resize(function(){
+  resizeGate();
+});
