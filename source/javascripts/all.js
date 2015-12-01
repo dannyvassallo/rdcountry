@@ -6,4 +6,5 @@
 //= require_age-gate
 //= require_code-gate
 //= require_scroll
+//= require vendor/_mobiscroll
 //= require_tree .
