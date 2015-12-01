@@ -865,8 +865,8 @@
                     dw.hide().appendTo('body');
 
                     function getY(e) {
-                        return touch ? 
-                            e.originalEvent ? 
+                        return touch ?
+                            e.originalEvent ?
                             e.originalEvent.changedTouches[0].pageY : e.changedTouches[0].pageY
                             : e.pageY;
                     }
