@@ -24,6 +24,7 @@ function validateCode() {
     code = code.toLowerCase();
 
     if (code == "believe"){
+        $('#hider').show();
         $('.gate').fadeOut('slow');
         window.scrollTo(0,0);
         var ageVal = $('#age').val();
