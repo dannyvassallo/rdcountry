@@ -1,15 +1,18 @@
-if(/(iPhone|iPad|iPod)\sOS\s7/.test(navigator.userAgent)) {
-    alert('ios7');
-    initiOSfixer();
+function iOSversion() {
+
+  if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+    if (!!window.indexedDB) { initiOSfixer(); return 'iOS 8 and up'; }
+    if (!!window.SpeechSynthesisUtterance) { initiOSfixer(); return 'iOS 7'; }
+    if (!!window.webkitAudioContext) { return 'iOS 6'; }
+    if (!!window.matchMedia) { return 'iOS 5'; }
+    if (!!window.history && 'pushState' in window.history) { return 'iOS 4'; }
+    return 'iOS 3 or earlier';
+  }
+
+  return 'Not an iOS device';
 }
-if(/(iPhone|iPad|iPod)\sOS\s8/.test(navigator.userAgent)) {
-    alert('ios8');
-    initiOSfixer();
-}
-if(/(iPhone|iPad|iPod)\sOS\s9/.test(navigator.userAgent)) {
-    alert('ios9');
-    initiOSfixer();
-}
+
+iOSversion();
 
 function initiOSfixer(){
   $(window).on('resize orientationchange', fixHeightOnIOS7);
