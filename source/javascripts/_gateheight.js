@@ -8,7 +8,12 @@ $(function() {
     }
 
     $(window).on('resize orientationchange', fixHeightOnIOS7);
-    fixHeightOnIOS7();
     $('body').css('position', 'fixed');
     $('.gate').css('height', document.height);
+    fixHeightOnIOS7();
+});
+
+
+$(window).resize(function(){
+  fixHeightOnIOS7();
 });
