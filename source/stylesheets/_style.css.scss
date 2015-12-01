@@ -9,6 +9,7 @@ html{
 
 body{
   height: 100%;
+  width: 100%;
   font-family: 'PlacardMT-BoldCondensed';
 }
 
@@ -66,7 +67,7 @@ body{
   background-color: $purple-lt;
 }
 
-.contest-header{  
+.contest-header{
   height: 400px;
   margin-top: -200px;
   margin-bottom: -210px;
