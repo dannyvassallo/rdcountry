@@ -33,7 +33,10 @@ function validateForm() {
         return false;
     }
     else{
-        submitted=true;
+        $("#entry_1845520799").prop("disabled", false);
+        setTimeout(function(){
+            submitted=true;
+        }, 500);
     }
 }
 

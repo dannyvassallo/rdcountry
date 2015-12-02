@@ -1,10 +1,10 @@
 $purple: white;
-$contest-text-color: white;
+$contest-text-color: #092765;
 
 #ss-form{
   margin: 0 auto;
   input{
-    border-radius: 15px;    
+    border-radius: 15px;
   }
 }
 
@@ -16,6 +16,7 @@ margin: 0 auto;
     font-size: 20px;
     text-transform: uppercase;
     color: $contest-text-color;
+    text-shadow: 0px 0px 10px #fff;
   }
   .ss-form-entry{
     // max-width: 700px;
@@ -45,7 +46,7 @@ margin: 0 auto;
 .disneysubmit{
   margin: 0 auto;
   border: none !important;
-  background-image: url('https://s3.amazonaws.com/myfangate.com/shawnmendes/enterbutton.png');
+  background-image: url('https://s3.amazonaws.com/myfangate.com/demilovato/enterbutton.png');
   width: 203px !important;
   height: 75px;
   margin: 20px 0 20px 0;
@@ -71,14 +72,14 @@ margin: 0 auto;
   max-width: 810px;
   text-align: center;
   margin: 0 auto;
-  color: $purple;
+  color: $contest-text-color;
   padding-bottom: 40px;
   a{
     text-transform: uppercase;
     font-family: sans-serif;
     letter-spacing: 2px;
     font-size: 20px;
-    color: $purple;
+    color: $contest-text-color;
   }
   h2{
     text-transform: uppercase;
@@ -87,7 +88,7 @@ margin: 0 auto;
 }
 
 .thank-you{
-  color: $purple;
+  margin-top: 50px;
 }
 
 .text-wrap{
@@ -103,3 +104,4 @@ margin: 0 auto;
   cursor: pointer;
   margin: 20px auto;
 }
+
