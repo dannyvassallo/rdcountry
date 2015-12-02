@@ -21,15 +21,16 @@ function validateAge() {
 
 function validateCode() {
     var code = document.forms["code-gate"]["code"].value;
-    code = code.toLowerCase();
+    code = code.trim().toLowerCase();
 
-    if (code == "believe"){
+    if (code == "confident"){
         $('#hider').show();
         $('.gate').fadeOut('slow');
         window.scrollTo(0,0);
         var ageVal = $('#age').val();
         $('body').css('position', 'relative');
-        $('#entry_1845520799').val(ageVal);
+        ageVal = new Date(ageVal);
+        document.getElementById("entry_1845520799").valueAsDate = ageVal;
         $('.gate').fadeOut('slow');
         return false
     }
