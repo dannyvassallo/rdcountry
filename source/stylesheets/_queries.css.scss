@@ -16,7 +16,10 @@
   .text-wrap h1{
     font-size: 25px;
     line-height: 10px
-  }  
+  }
+  .entries{
+    font-size: 16px;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -26,8 +29,8 @@
     line-height: 15px;
   }
   .prizing h2{
-    font-size: 70px;    
-  }  
+    font-size: 70px;
+  }
   #ss-form{
     padding: 0 10px;
   }
@@ -40,7 +43,10 @@
   .text-wrap h1{
     font-size: 30px;
     line-height: 10px
-  }    
+  }
+  .entries{
+    font-size: 21px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -51,7 +57,7 @@
     line-height: 20px;
   }
   .prizing h2{
-    font-size: 90px;    
+    font-size: 90px;
   }
   #ss-form{
     padding: 0 10px;
@@ -65,5 +71,8 @@
   .text-wrap h1{
     font-size: 40px;
     line-height: 15px
-  } 
+  }
+  .entries{
+    font-size: 30px;
+  }
 }

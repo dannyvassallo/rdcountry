@@ -21,6 +21,19 @@ body{
        url('../fonts/PlacardMT-BoldCondensed.svg#PlacardMT-BoldCondensed') format('svg');
 }
 
+@font-face {
+    font-family: 'rangerregular';
+    src: url('../fonts/ranger_regular-webfont.eot');
+    src: url('../fonts/ranger_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ranger_regular-webfont.woff2') format('woff2'),
+         url('../fonts/ranger_regular-webfont.woff') format('woff'),
+         url('../fonts/ranger_regular-webfont.ttf') format('truetype'),
+         url('../fonts/ranger_regular-webfont.svg#rangerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .full-w{
   width: 100%;
 }
@@ -35,9 +48,8 @@ body{
   width: 100%;
   z-index: -99999;
   background-color: $rd-backgroundcolor;
-  background-image: url('https://s3.amazonaws.com/myfangate.com/demilovato/background.jpg');
-  background-position: center center;
-  background-size: cover;
+  background-repeat: repeat;
+  background-image: url('https://s3.amazonaws.com/myfangate.com/rdcountry/background.jpg');
 }
 
 .header{
@@ -96,11 +108,39 @@ body{
 }
 
 .red, .red a{
-  color: red !important;
+  color: #c6292f !important;
   text-shadow: 0px 0px 10px #fff;
 }
 
 .blue{
-  color: #092765 !important;
-  text-shadow: 0px 0px 10px #fff;
+  color: #000 !important;
+  // text-shadow: 0px 0px 10px #fff;
+}
+
+.gform-wrap{
+  background-repeat: repeat;
+  background-image: url('https://s3.amazonaws.com/myfangate.com/rdcountry/repeatingred.jpg');
+}
+
+.ss-question-list{
+  margin-bottom: 0;
+}
+
+.form-group{
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+label{
+  font-family: 'rangerregular';
+}
+
+.header{
+  padding: 5%;
+}
+
+.rdcountrylogo{
+  margin: 0 auto;
+  max-width: 320px;
+  margin-top: 10px;
 }
