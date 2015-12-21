@@ -13,17 +13,7 @@ function validateAge() {
     }
     else{
         $('#age-gate').addClass('hider');
-        window.scrollTo(0,0);
-        $('#code-gate').removeClass('hider');
-        return false
-    }
-}
-
-function validateCode() {
-    var code = document.forms["code-gate"]["code"].value;
-    code = code.trim().toLowerCase();
-
-    if (code == "confident"){
+        $('.gate').delay(500).fadeOut('slow');
         $('#hider').show(function(){
             $('#background').delay(400).height($(document).height());
             $('#code').blur();
@@ -31,16 +21,39 @@ function validateCode() {
               window.scrollTo(0, 0);
             }, 0);
         });
-        $('.gate').delay(500).fadeOut('slow');
         window.scrollTo(0,0);
         var ageVal = $('#age').val();
         $('body').css('position', 'relative');
         ageVal = new Date(ageVal);
         document.getElementById("entry_1845520799").valueAsDate = ageVal;
-        return false
-    }
-    else{
-        alertify.error("Sorry, the codeword you entered is not valid.");
+        window.scrollTo(0,0);
+        // $('#code-gate').removeClass('hider');
         return false
     }
 }
+
+// function validateCode() {
+//     var code = document.forms["code-gate"]["code"].value;
+//     code = code.trim().toLowerCase();
+
+//     if (code == "confident"){
+//         $('#hider').show(function(){
+//             $('#background').delay(400).height($(document).height());
+//             $('#code').blur();
+//             setTimeout(function(){
+//               window.scrollTo(0, 0);
+//             }, 0);
+//         });
+//         $('.gate').delay(500).fadeOut('slow');
+//         window.scrollTo(0,0);
+//         var ageVal = $('#age').val();
+//         $('body').css('position', 'relative');
+//         ageVal = new Date(ageVal);
+//         document.getElementById("entry_1845520799").valueAsDate = ageVal;
+//         return false
+//     }
+//     else{
+//         alertify.error("Sorry, the codeword you entered is not valid.");
+//         return false
+//     }
+// }
